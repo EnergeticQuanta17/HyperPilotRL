@@ -1,0 +1,21 @@
+1. Changing default environment name, algorithm, policy of "previous_request.json"
+
+2. Do loading from json when nothing is passed in __init__
+
+3. Currently doing only for PPO
+
+4. The model must be selected by the "loader" based on the highest performing model accoring to the data prenset in logs of that execution number
+For now, model_selector selects the lastest model
+Statistically return best model
+
+5. Evaluating on differnet environments
+	Load must be done on different environment to see how well it could generalize
+
+6. More useful information to be returned from MegaLoader.load()
+
+7. There are a lot of execution numbers where folders are blank, because error happening before writing to the model. This must not happen
+
+8. When we are training our hyperparmeter, we should not do env.render()
+	For the time-being I've commented out, that line
+
+9. 
